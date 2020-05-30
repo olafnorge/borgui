@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created using Karbon, part of Calligra: http://www.calligra.org/karbon -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="79.51368pt"
+   height="77.385765pt"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="logo_min.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1312"
+     inkscape:window-height="707"
+     id="namedview11"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.028125"
+     inkscape:cx="160"
+     inkscape:cy="13.170898"
+     inkscape:window-x="2321"
+     inkscape:window-y="72"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg9" />
+  <defs
+     id="defs2" />
+  <path
+     id="p0"
+     d="M 0,51.590667 V 0 H 53.009119 106.01824 V 51.590667 103.18102 H 53.009119 0 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#000200;stroke-width:0.50634485" />
+  <path
+     id="p1"
+     d="M 64.6586,30.458983 H 47.5753 v -13.8021 H 74.294 l 13.8542,13.8021 v 14.0625 l -6.9271,6.9271 6.9271,6.927 v 13.5938 L 74.294,85.771483 H 47.5753 v -13.8021 h 17.0833 v -14.7396 H 47.5753 v -12.0312 h 17.0833 z m -43.75,-13.8021 h 23.0208 v 69.1146 H 20.9086 Z"
+     inkscape:connector-curvature="0"
+     style="fill:#00dd00" />
+</svg>

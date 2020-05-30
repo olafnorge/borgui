@@ -1,0 +1,49 @@
+@media only screen and (max-width: 800px) {
+  .no-more-tables {
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    thead {
+      /* Hide table headers (but not display: none;, for accessibility) */
+      tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+    }
+
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      position: relative;
+      white-space: normal;
+      text-align: left;
+
+      .no-more-tables-cell {
+        padding-left: 40% !important;
+        width: 100%;
+        display: block;
+      }
+
+      /* Now like a table header */
+      &:before {
+        position: relative;
+        text-align: left;
+        font-weight: bold;
+        width: 40%;
+        display: inline-flex;
+        float: left;
+
+        /* Label the data */
+        content: attr(data-title);
+      }
+
+      /* drop empty columns */
+      &:empty {
+        display: none;
+      }
+    }
+  }
+}

@@ -118,7 +118,7 @@
             "version": "5.3.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/olafnorge/laravel-breadcrumbs.git",
+                "url": "git@github.com:olafnorge/laravel-breadcrumbs.git",
                 "reference": "99f92a706faefb5e1816caa96e877a0184509e5b"
             },
             "dist": {

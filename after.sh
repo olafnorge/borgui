@@ -33,7 +33,7 @@ sudo apt-get install -y \
     python3-pip \
     python3-setuptools \
     python3-wheel
-sudo -H pip3 install borgbackup[fuse]==$(php -r "echo (require('/home/vagrant/code/config/borg.php'))['version'];")
+sudo -H pip3 install borgbackup==$(php -r "echo (require('/home/vagrant/code/config/borg.php'))['version'];")
 sudo apt-get autoremove --purge -y \
     -o Dpkg::Options::="--force-confdef" \
     -o Dpkg::Options::="--force-confold" \
@@ -46,7 +46,7 @@ sudo apt-get autoremove --purge -y \
 # setup app
 echo "SETUP HORIZON"
 [ -f /home/vagrant/code/.env ] || cp /home/vagrant/code/.env.example /home/vagrant/code/.env
-(cd /home/vagrant/code && /home/vagrant/code/artisan horizon:assets --no-ansi --no-interaction)
+(cd /home/vagrant/code && /home/vagrant/code/artisan horizon:publish --no-ansi --no-interaction)
 (cd /home/vagrant/code && /home/vagrant/code/artisan migrate --no-ansi --no-interaction)
 composer dump-autoload --no-ansi --no-interaction --working-dir=/home/vagrant/code
 echo "INSTALL YARN DEPENDENCIES"
@@ -72,23 +72,3 @@ EOF
 sudo supervisorctl reread
 sudo supervisorctl add horizon
 sudo supervisorctl status
-
-# setup style guide
-#if [ -f /home/vagrant/code/node_modules/@coreui/coreui-free-bootstrap-admin-template/package.json ]; then
-#    echo "SETUP STYLEGUIDE 1"
-#    (cd /home/vagrant/code/node_modules/@coreui/coreui-free-bootstrap-admin-template && npm install \
-#            --ignore-scripts \
-#            --no-audit \
-#            --color=false \
-#            --display=none \
-#            --no-progress)
-#    echo "SETUP STYLEGUIDE 2"
-#    (cd /home/vagrant/code/node_modules/@coreui/coreui-free-bootstrap-admin-template && npm run build -- \
-#            --color=false \
-#            --display=none)
-#
-#    # link into public so that we have it available
-#    [ ! -f /home/vagrant/code/public/styleguide ] || rm /home/vagrant/code/public/styleguide;
-#    [ ! -L /home/vagrant/code/public/styleguide ] || rm /home/vagrant/code/public/styleguide;
-#    (cd /home/vagrant/code/public && ln -sf ../node_modules/@coreui/coreui-free-bootstrap-admin-template/dist styleguide)
-#fi
